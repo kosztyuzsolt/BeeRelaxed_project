@@ -4,13 +4,13 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
 from selenium.webdriver import ActionChains
 import uuid
-from general_page import GeneralPage
+from BeeRelaxed.general_page import GeneralPage
 
 class BeerelaxedRegisterPage(GeneralPage):
     def __init__(self, URL, browser):
         super().__init__(URL, browser)
         self.browser = browser
-        self.wait = WebDriverWait(self.browser, 5)
+        self.wait = WebDriverWait(self.browser, 10)
 
     def button_register(self):
         return self.wait.until(EC.element_to_be_clickable((By.XPATH, '//a[text()="Register"]')))

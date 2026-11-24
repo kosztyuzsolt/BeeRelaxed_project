@@ -1,11 +1,9 @@
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
-import os
-# from BeeRelaxed.utils import generate_unique_email
-from utils import generate_unique_email
 
-from page_models.br_register_page_model import BeerelaxedRegisterPage
-from generate_browser import get_configured_chrome_driver
+import os
+from BeeRelaxed.utils import generate_unique_email
+
+from BeeRelaxed.page_models.br_register_page_model import BeerelaxedRegisterPage
+from BeeRelaxed.generate_browser import get_configured_chrome_driver
 
 URL = 'http://localhost:4200/'
 

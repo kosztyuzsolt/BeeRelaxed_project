@@ -1,6 +1,4 @@
-# from selenium.webbrowser import Chrome
 import time
-
 
 class GeneralPage:
     def __init__(self, URL, browser):
